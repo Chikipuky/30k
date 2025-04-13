@@ -6486,6 +6486,10 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
             <infoLink name="Shrouded (X)" id="9ed4-a41a-f89c-523e" hidden="false" type="rule" targetId="10c3-fdb0-089f-ca65"/>
             <infoLink name="Fear (X)" id="d858-642c-ed1d-8457" hidden="false" type="rule" targetId="21f6-7842-df5c-d2e7"/>
           </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="62b3-5d0a-2599-259d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d82-aa33-f9f5-9c79" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -6521,13 +6525,11 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Heavy Bolter" hidden="false" id="61c4-70eb-0f57-c645" type="selectionEntry" targetId="07fd-c24a-9235-4206">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f19-fe61-d324-34a7" includeChildSelections="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee5b-ae69-aaa2-2857" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
+            <entryLink import="true" name="Heavy Bolter" hidden="false" id="61c4-70eb-0f57-c645" type="selectionEntry" targetId="07fd-c24a-9235-4206"/>
           </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ec1-7a33-2b3f-66ae" includeChildSelections="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -6654,6 +6656,9 @@ At the beginning of every subsequent player turn, the marker scatters 2D6&quot; 
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4dc7-0eb3-9c68-f652" includeChildSelections="false"/>
+              </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
