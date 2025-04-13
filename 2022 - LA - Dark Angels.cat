@@ -6536,7 +6536,7 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="160"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Dark Talon" hidden="false" id="4b38-f7d2-f845-3e73">
+        <selectionEntry type="model" import="true" name="Dark Talon" hidden="false" id="4b38-f7d2-f845-3e73">
           <profiles>
             <profile name="Dark Talon" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="1aec-c3f3-2ae3-6455">
               <characteristics>
