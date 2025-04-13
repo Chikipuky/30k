@@ -2955,6 +2955,12 @@
         <categoryLink targetId="36c3-e85e-97cc-c503" id="b066-c92e-b9ee-6ee1" primary="false" name="Unit:"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Dark Talon" hidden="false" id="1f06-8028-d02d-3f1e" type="selectionEntry" targetId="34f1-c330-f4ac-0afa">
+      <categoryLinks>
+        <categoryLink targetId="20ef-cd01-a8da-376e" id="2e2e-9c4f-f88c-72dd" primary="true" name="Fast Attack:"/>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="6024-9d5b-dbfc-3608" primary="false" name="Unit:"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="4097-b2b4-d9da-da99" name="Corswain" hidden="false" collective="false" import="true" type="unit">
@@ -6505,18 +6511,146 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68c1-9db0-e933-d2ab" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Heavy Bolter" hidden="false" id="61c4-70eb-0f57-c645" type="selectionEntry" targetId="07fd-c24a-9235-4206">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f19-fe61-d324-34a7" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee5b-ae69-aaa2-2857" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Hexagrammaton Choice:" hidden="false" id="f658-e146-ce4a-4b04" type="selectionEntryGroup" targetId="61a2-7005-1e6c-c08e"/>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="1) May exchange the Heavy Bolter for:" id="a9cc-55a7-1978-86a3" hidden="false">
+        <selectionEntryGroup name="1) Main weapon:" id="a9cc-55a7-1978-86a3" hidden="false">
           <entryLinks>
             <entryLink import="true" name="Kheres Assault Cannon" hidden="false" id="5d9f-14cc-79bf-4f59" type="selectionEntry" targetId="fe77-2e74-160d-c7af">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Heavy Bolter" hidden="false" id="61c4-70eb-0f57-c645" type="selectionEntry" targetId="07fd-c24a-9235-4206">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f19-fe61-d324-34a7" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee5b-ae69-aaa2-2857" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Dark Talon" hidden="false" id="34f1-c330-f4ac-0afa">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="160"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Dark Talon" hidden="false" id="4b38-f7d2-f845-3e73">
+          <profiles>
+            <profile name="Dark Talon" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="1aec-c3f3-2ae3-6455">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Flyer)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">20</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f2af-cdcd-3a13-96be" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9200-4e54-ada6-b802" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="4e84-2d57-4986-2b23" id="ff67-6c9f-2f1b-a8f6" primary="false" name="Flyer Sub-type:"/>
+            <categoryLink targetId="3a7a-8bb7-b0d3-e2e7" id="39cd-bde6-3983-27ed" primary="false" name="Hover Sub-type"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Deep Strike" id="8836-bf78-3ba1-39bc" hidden="false" type="rule" targetId="f1e1-986f-c783-ca9e"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Two Hurricane Bolters" hidden="false" id="73e1-39ee-abf0-4978">
+          <profiles>
+            <profile name="Hurricane Bolter" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="e68a-7691-42eb-47a1">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">24</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire 3, Twin-linked</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Twin-linked" id="28c6-4fcc-66c8-f34a" hidden="false" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="480d-7d2f-e0b1-01fc-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="480d-7d2f-e0b1-01fc-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Rift Cannon" hidden="false" id="4f13-7e37-ee79-44a7">
+          <profiles>
+            <profile name="Rift Cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="18a1-a3c5-8d6b-4929">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">18</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blind, Blast (3&quot;), Rift Vortex</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2941-33b1-7fa5-852f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2941-33b1-7fa5-852f-max" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Blast" id="e3cf-1298-1b82-a8ee" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
+            <infoLink name="Blind" id="9c38-756e-9e89-483e" hidden="false" type="rule" targetId="d836-747d-07d6-2b63"/>
+          </infoLinks>
+          <rules>
+            <rule name="Rift Vortex" id="bab1-ce32-75c2-f26b" hidden="false">
+              <description>If any double is rolled when rolling for scatter for an attack made by this weapon, resolve the rest of the attack as if the weapon had the Destroyer type.
+
+
+The marker for a Vortex weapon is not removed from play after damage has been resolved. Leave it in play on the tabletop. The marker is impassable terrain as long as it remains in play.
+
+
+At the beginning of every subsequent player turn, the marker scatters 2D6&quot; (use the little arrow if you roll a Hit!). If a double is rolled, the marker is removed from play instead. Any unit under the marker’s new location is hit. Apply damage as described above.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Stasis Bomb" hidden="false" id="9ef3-760a-a255-1e98">
+          <profiles>
+            <profile name="Stasis Bomb" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="b5b9-6e25-17d7-ac0e">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Bomb 1, Large Blast (5&quot;), One Shot, Vast Stasis Anomaly</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Vast Stasis Anomaly" id="b634-7be1-07d9-ab6a" hidden="false">
+              <description>Any unit hit by one or more weapons with this special rule reduces its Weapon Skill and Initiative by 3 (to a minimum of 1) until the end of the turn. Furthermore, if a model suffers one or more unsaved Wounds from this weapon, it must pass a separate Initiative test for each Wound suffered or be removed from play as a casualty.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="One Use/One Shot" id="26b7-3b5e-9e9a-3d3d" hidden="false" type="rule" targetId="df0c-5423-b892-491e"/>
+            <infoLink name="Blast" id="0968-b847-33a5-6c59" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a26b-4fed-4317-7af0-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a26b-4fed-4317-7af0-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="e2b6-b770-784c-9e95" id="3f8f-8c0e-9280-e5c7" primary="false" name="Vehicle:"/>
+        <categoryLink targetId="11f2-472f-c1d1-9ae9" id="fafd-e773-4154-92fd" primary="false" name="Legiones Astartes"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Hexagrammaton Choice:" hidden="false" id="44b3-a703-d212-bc3b" type="selectionEntryGroup" targetId="61a2-7005-1e6c-c08e"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="1) May take the following:" id="c2b6-e3a9-2690-621e" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Ramjet Diffraction Grid" hidden="false" id="2564-adba-820b-02ec" type="selectionEntry" targetId="a884-7de7-32c4-3ef6">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
